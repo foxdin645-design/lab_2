@@ -11,7 +11,7 @@ infoParagraph.innerText = "Дані системи: " + localStorage.getItem('us
 footer.appendChild(infoParagraph);
 
 // Коментарі з API
-fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
+fetch('https://jsonplaceholder.typicode.com/posts/2/comments')
     .then(response => response.json())
     .then(data => {
         const list = document.getElementById('experience-list');
