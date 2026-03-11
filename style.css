@@ -228,3 +228,23 @@ body.night-mode html::before,
 body.night-mode html::after {
     opacity: 0.2;
 }
+
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #800020;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001; /* щоб була над усім */
+    font-family: inherit;
+    font-weight: bold;
+}
+
+body.night-mode .theme-btn {
+    background-color: #fdfcf5;
+    color: #1a1a1a;
+}

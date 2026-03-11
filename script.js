@@ -38,3 +38,9 @@ const hour = new Date().getHours();
 if (hour >= 21 || hour < 7) {
     document.body.classList.add('night-mode');
 }
+
+// Ручне перемикання теми 
+const themeBtn = document.getElementById('theme-toggle');
+themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('night-mode');
+});
