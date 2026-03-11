@@ -35,7 +35,7 @@
 
     <section>
         <h2>Професійна підготовка та досвід розробки</h2>
-        <ul>
+        <ul id="experience-list"> 
             <li><strong>Дизайн та UI/UX:</strong> Досвід командної роботи над проєктом карткової гри <strong>"Міські легенди" (citylegends.win)</strong>. Робота у <strong>Figma</strong>: детальне промальовування кожного компонента сайту та інтерфейсу.</li>
             <li><strong>2013 - 2024:</strong> Навчання у художній професійній школі (11 років професійного дизайну та підготовки до творчих конкурсів).</li>
             <li><strong>2017 - дотепер:</strong> Проходження акредитаційних кваліфікацій з медичного татуювання (робота, що потребує високої точності).</li>
@@ -63,9 +63,24 @@
     </section>
 
     <hr>
-    <footer>
-        <p>Контактна інформація: +380685990888; diana.bondarenko.kb.2024@lpnu.ua</p>
+    <footer id="main-footer"> <p>Контактна інформація: +380685990888; diana.bondarenko.kb.2024@lpnu.ua</p>
     </footer>
+
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Зворотній зв'язок</h2>
+            <form action="https://formspree.io/f/mqakpjed" method="POST">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="email" name="email" placeholder="Ваш Email" required>
+                <input type="tel" name="phone" placeholder="Номер телефону">
+                <textarea name="message" placeholder="Ваше повідомлення"></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
